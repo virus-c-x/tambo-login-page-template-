@@ -1,18 +1,17 @@
-/* From Uiverse.io by anest_6070 */ 
 /* SCOPED ROOT - Replaces Body */
 .main-container {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 100%; /* No vh allowed */
+  height: 100%;
   background-color: #000;
   padding: 20px;
   font-family: "Inter", sans-serif;
   color: white;
 }
 
-/* Universal Reset specifically for this component */
+/* Universal Reset */
 .main-container * {
   box-sizing: border-box;
   margin: 0;
@@ -22,7 +21,7 @@
 /* MAIN CARD */
 .main-container .card-box {
   display: flex;
-  flex-wrap: wrap; /* Allows stacking */
+  flex-wrap: wrap;
   width: 100%;
   max-width: 1000px;
   background: #000;
@@ -34,7 +33,7 @@
 
 /* LEFT SIDE */
 .main-container .left-panel {
-  flex: 1 1 340px; /* Wraps if under 340px */
+  flex: 1 1 340px;
   position: relative;
   background: radial-gradient(
     circle at 50% 10%,
@@ -70,6 +69,14 @@
   gap: 12px;
   font-weight: 600;
   font-size: 18px;
+}
+
+/* LOGO IMAGE FIXED SIZE */
+.main-container .brand-header .logo-img {
+  width: 24px;   
+  height: 24px;
+  object-fit: cover;
+  border-radius: 50%;
 }
 
 .main-container .hero-text {
@@ -222,7 +229,7 @@
 .main-container .input-box {
   margin-bottom: 20px;
   width: 100%;
-  min-width: 0; /* Prevents overflow in flexbox */
+  min-width: 0;
 }
 
 .main-container .input-label {
@@ -300,7 +307,7 @@
   text-decoration: none;
 }
 
-/* Mobile Tweak specifically for the preview card size */
+/* Mobile */
 @media (max-width: 500px) {
   .main-container .left-panel,
   .main-container .right-panel {
